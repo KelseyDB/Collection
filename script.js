@@ -1,0 +1,83 @@
+const collection = [
+  {
+    name: 'How Can We Bear to Throw Anything Away?',
+    videoUrl:
+    youtuber: 'Jacob Geller',
+    releaseDate: '6 oct 2023',
+    picture: './img/"how can we bear to throw anything away"',
+    length: '40:40',
+    about: 'The question of if we should save everything or throw things away and why.',
+  },
+  {
+    name: 'Art in the Pre-Apocalypse',
+    videoUrl:
+    youtuber: 'Jacob Geller',
+    releaseDate: '4 sep 2023',
+    picture: './img/"art in the pre-apocalypse"',
+    length: '32:15',
+    about: 'An essay about death, despair, hope and two dozen other things.',
+  },
+  {
+    name: 'Fear of Big Things Underwater',
+    videoUrl:
+    youtuber: 'Jacob Geller',
+    releaseDate: '4 oct 2022',
+    picture: './img/"fear of big things underwater"',
+    length: '48:34',
+    about: 'Fear of the unknown, the unexplored, things underwater, media that touch on this topic and so much more.',
+  },
+  {
+    name: 'Head Transplants and the Non-Existence of the Soul',
+    videoUrl:
+    youtuber: 'Jacob Geller',
+    releaseDate: '4 apr 2022',
+    picture: './img/"head transplants',
+    length: '39:49',
+    about: 'Does the soul exist, does it still exist if we would swap heads, does it cease to exist when our hearts stop?',
+  },
+  {
+    name: 'ROBLOX_OOF.mp3',
+    videoUrl:"https://www.youtube.com/watch?v=0twDETh6QaI", 
+    youtuber: 'hbomberguy',
+    releaseDate: '17 nov 2022',
+    picture: './img/ROBLOX',
+    length: '1:57:48',
+    about: 'A fantastic essay about where the OOF sound came from and a deep dive into the life of Tommy Tallerico.',
+  },
+  {
+    name: "Pathologic is Genius, And Here's Why",
+    videoUrl:"https://youtu.be/JsNm2YLrk30",
+    youtuber: 'hbomberguy',
+    releaseDate: '22 nov 2019',
+    picture: './img/pathologic',
+    length: '2:10:51',
+    about: "A very in depth deep dive of the game pathologic, all its quirks, the difficulty, why it's good despite being almost impossible.",
+  },
+  {
+    name: "Vaccines and Autism: A Measured Response",
+    videoUrl:"https://youtu.be/8BIcAZxFfrc",
+    youtuber: 'hbomberguy',
+    releaseDate: '26 may 2021',
+    picture: './img/vaccines',
+    length: '1:44:09',
+    about: "What is the science behind the anti-vaccine movement, and is it any good? Let's find out!",
+  },
+  {
+    name: "What The Internet Did To Garfield",
+    videoUrl: "https://youtu.be/O2C5R3FOWdE",
+    youtuber: 'Super Eyepatch Wolf',
+    releaseDate: '12 dec 2021',
+    picture: './img/garfield',
+    length: '1:19:29',
+    about: "The evolution of Garfield, from simple comic strip to worldwide sensation (including the horror).",
+  },
+  {
+    name: "The Cruelest Video Game",
+    videoUrl: "https://www.youtube.com/watch?v=dRIkWHo1SJY",
+    youtuber: 'Super Eyepatch Wolf',
+    releaseDate: '6 may 2023',
+    picture: './img/fearAndHunger',
+    length: '48:36',
+    about: "An in depth analysis about the game Fear and Hunger.",
+  },
+]
