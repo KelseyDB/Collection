@@ -121,6 +121,14 @@ const collection = [
   },
 ]
 
+// function shuffleArray(array) {
+//   for (let i = array.length - 1; i > 0; i--) {
+//     const j = Math.floor(Math.random() * (i + 1));
+//     [array[i], array[j]] = [array[j], array[i]];
+//   }
+// }
+// shuffleArray(collection)
+
 const main = document.querySelector('main');
 
 for (let i = 0; i < collection.length; i++) {
@@ -138,6 +146,20 @@ for (let i = 0; i < collection.length; i++) {
   link.target = '_blank';
   card.appendChild(link);
   link.appendChild(image);
+
+  const data = document.createElement("div");
+  data.className = "data"
+  card.appendChild(data);
+
+  const release = document.createElement('p');
+  data.appendChild(release);
+  release.className = "date";
+  release.textContent = videoEssay.releaseDate;
+  
+  const length = document.createElement('p');
+  data.appendChild(length);
+  length.className = "length";
+  length.textContent = videoEssay.length
 
   const title = document.createElement('h2');
   card.appendChild(title);
