@@ -13,6 +13,13 @@ const main = document.querySelector('main');
 for (let i = 0; i < collection.length; i++) {
   const videoEssay = collection[i];
 
+  // function create(element , classname) {
+  //   const newElement = document.createElement(element)
+  //   newElement.classname = classname
+  //   newElement.textContent = videoEssay.classname
+  //   card.appendChild(classname);
+  // }
+
   const card = document.createElement('div');
   card.className = "card";
   main.appendChild(card);
@@ -30,20 +37,20 @@ for (let i = 0; i < collection.length; i++) {
   data.className = "data"
   card.appendChild(data);
 
-  const release = document.createElement('p');
-  data.appendChild(release);
-  release.className = "date";
-  release.textContent = videoEssay.releaseDate;
+  const releaseDate = document.createElement('p');
+  data.appendChild(releaseDate);
+  releaseDate.className = "releaseDate";
+  releaseDate.textContent = videoEssay.releaseDate;
   
   const length = document.createElement('p');
   data.appendChild(length);
   length.className = "length";
   length.textContent = videoEssay.length
 
-  const title = document.createElement('h2');
-  card.appendChild(title);
-  title.className = "title";
-  title.textContent = videoEssay.name;
+  const name = document.createElement('h2');
+  card.appendChild(name);
+  name.className = "name";
+  name.textContent = videoEssay.name;
 
   const youtuber = document.createElement('h3');
   card.appendChild(youtuber);
@@ -59,4 +66,27 @@ for (let i = 0; i < collection.length; i++) {
   card.appendChild(themes);
   themes.className = 'themes';
   themes.textContent = videoEssay.themes;
+
+  // const backgroundDiv = document.createElement("div");
+  // card.parentNode.insertBefore(backgroundDiv, card);
+  // backgroundDiv.className = "background";
+  // backgroundDiv.appendChild(card);
+
+  function hoverCard (){
+    card.style.transform = "scale(1.1)";
+    card.style.transition = "0.5s"
+    card.style.zIndex = "100"
+    document.getElementById("overlay").style.display = "block";
+    overlay.style.zIndex = "1"
+    
+  }
+  function normal (){
+    card.style.transform = "";
+    card.style.zIndex = ""
+    document.getElementById("overlay").style.display = "none";
+    overlay.style.zIndex = "0"
+  }
+
+  card.addEventListener("mouseover", hoverCard);
+  card.onmouseout = normal
 } 
