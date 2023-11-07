@@ -55,3 +55,7 @@ body main .card .youtuber {
   margin-top: 0px;
   color: gray;
 }
+body main .card .themes {
+  color: lightgray;
+  font-size: small;
+}

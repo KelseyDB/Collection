@@ -54,4 +54,9 @@ for (let i = 0; i < collection.length; i++) {
   card.appendChild(about);
   about.className = "about";
   about.textContent = videoEssay.about;
+
+  const themes = document.createElement('p');
+  card.appendChild(themes);
+  themes.className = 'themes';
+  themes.textContent = videoEssay.themes;
 } 
