@@ -65,7 +65,7 @@ for (let i = 0; i < collection.length; i++) {
   const themes = document.createElement('p');
   card.appendChild(themes);
   themes.className = 'themes';
-  themes.textContent = videoEssay.themes;
+  themes.textContent = videoEssay.themes.join(', ');
 
   // const backgroundDiv = document.createElement("div");
   // card.parentNode.insertBefore(backgroundDiv, card);
